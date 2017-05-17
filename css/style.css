@@ -1,0 +1,393 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+.header {
+	height: 700px;
+	background-image: url("../img/phone-header.jpg");
+	background-repeat: no-repeat;
+}
+
+.wrapper-header {
+	width: 980px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.box-logo {
+    height: 70px;
+    width: 237px;
+    margin: 0 auto 65px;
+    padding-top: 105px;
+}
+
+.box-logo__img {
+	width: 68px;
+	height: 68px;
+	padding-right: 25px;
+	float: left;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+}
+
+.box-logo__item {
+	display: inline-block;
+	padding-top: 10px;
+  	font-size: 60px;
+  	font-family: "Pacifico";
+  	color: rgb(34, 34, 34);
+}
+
+.header-discription {
+	text-align: center;
+}
+
+.header-discription__item {
+  	font-size: 36px;
+  	font-family: "Raleway";
+  	color: rgb(34, 34, 34);
+  	line-height: 0.5;
+}
+
+.main {
+	background-color: #F4F4F4	;
+}
+/* Обёртка блока main, с фиксированой шириной*/
+.wrapper-main {
+	width: 1055px;
+	height: 496px;
+	position: relative;
+	margin: 0 auto;
+}
+/*Позиционирование блока с картинкой телефона*/
+.box-telephone {
+	position: absolute;
+    top: -298px;
+    left: 353px;
+}
+	/*Блок с картинкой телефона*/
+.box-telephone__img {
+	height: 734px;
+	width: 349px;
+	display: inline-block;
+	background-image: url("../img/phone-img3.png");
+	background-repeat: no-repeat;
+}
+/*Блок с окружностью внтури картинки телефона*/
+.box-circle {
+	width: 26px;
+	height: 26px;
+	position: relative;
+	display: inline-block;
+	background-color: #6F6F6F;
+	border-radius: 50px;
+	cursor: pointer;
+}
+		/*При наведении на блок box-circle, маленькая окружность меняет цвет*/
+.box-circle:hover .box-circle__little{
+	background-color: #222222;
+}
+
+/*
+.n1 {
+	display: none;
+	position: absolute;
+	left: 295px;
+}
+
+.d1 {
+	border: 1px solid black;
+	display: inline-block;
+	height: 110px;
+	position: relative;
+	float: right;
+	top: 405px;
+	right: 33px;
+	transform: rotate(-27deg);
+}
+
+.d2 {
+	border: 1px solid black;
+	display: inline-block;
+	height: 100px;
+	position: relative;
+	float: right;
+	top: 476px;
+	right: -41px;
+	transform: rotate(-70deg);
+}
+*/
+.box-circle__little {
+	width: 16px;
+	height: 16px;
+	margin: 5px auto;
+	background-color: #F4F4F4;
+	border-radius: 50px;    
+}
+/*Блок с позиционированием блока окружности внутри картинки телефона*/
+.box-circle__item_position-1 {
+	top: 300px;
+	left: 93px;
+}
+
+.box-circle__item_position-2 {
+	top: 485px;
+	left: 63px;	
+}
+
+.box-circle__item_position-3 {
+	float: right;
+	top: 200px;
+	right: 100px;	
+}
+
+.box-circle__item_position-4 {
+	float: right;
+	top: 385px;
+	right: 74px;
+}
+
+/*Ощий блок контента box-content*/
+.box-content {
+	width: 295px;
+	display: inline-block;
+}
+		/*Модификатор для контента справа*/
+.box-content__right {
+	float: right;
+}
+
+.box-content__section {
+	margin: 60px 0 60px 0;
+}
+	/*Блок с описанием заголовка контента*/
+.box-content__h2 {
+  	font-size: 22px;
+  	font-family: "Raleway";
+  	color: rgb(34, 34, 34);
+  	font-weight: bold;
+  	line-height: 0.818;
+	padding-bottom: 31px;
+}
+		/*При наведении на блок .box-content__h2 появляется линия подчёркивания снизу*/
+.box-content__h2_hover:hover {
+	text-decoration: underline;
+}
+
+	/*Блок с описанием контента*/
+.box-content__discription {
+  	font-size: 16px;
+  	font-family: "HelveticaNeue";
+  	color: rgb(132, 132, 132);
+  	line-height: 1.625;
+  	text-align: left;
+}
+
+.wrapper-main-video {
+	height: 427px;
+	background-color: #E3E3E3;
+}
+
+.box-video {
+	width: 1178px;
+	margin: 0 auto;
+}
+
+.box-content__section-video_width {
+	width: 534px;
+	display: inline-block;
+	margin: 60px 144px 30px 0;
+}
+/*Блок с социальными иконками */
+.sociate-box-icon {
+	width: 252px;
+	height: 68px;
+	display: inline-block;
+}
+
+.sociate-box-icon__img {
+	width: 68px;
+	height: 68px;
+	display: inline-block;
+	border-radius: 50px;
+	background-color: #C5C5C5;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.sociate-box-icon__img_margin {
+	margin: 0 20px 0 20px;
+}
+
+.sociate-icon__img-apple {
+	background-image: url("../img/sociate-apple.png");
+	background-position-x: 20px;
+    background-position-y: 16px;
+}
+
+.sociate-icon__img-android {
+	background-image: url("../img/sociate-android.png");
+	background-position-x: 21px;
+    background-position-y: 17px;
+}
+
+.sociate-icon__img-windows {
+	background-image: url("../img/sociate-windows.png");
+	background-position-x: 15px;
+    background-position-y: 18px;
+}
+		/*Модификатор при наведении на социальную иконку*/
+.sociate-box-icon__img:hover {
+	background-color: #222222;
+}
+/*Блок с контейнером видео*/
+.media-box {
+	width: 500px;
+	height: 307px;
+	margin-top: 60px;
+	float: right;
+}
+	/*Блок видео*/
+.media-box__video {
+	border-radius: 15px;
+	margin-top: 0px;
+}
+
+
+/*Нижний блок контента*/
+.content-dawn {
+	height: 737px;
+}
+
+.content-dawn__discription {
+	height: 179px;
+}
+
+.content-dawn__discription-item {
+	margin: 65px 0 30px 0;
+  	font-size: 24px;
+  	font-family: "Raleway";
+  	color: rgb(0, 0, 0);
+  	line-height: 1;
+  	text-align: center;
+}
+
+.content-dawn__discription-name {
+	font-size: 14px;
+	text-align: center;
+	font-family: "HelveticaNeue";
+  	color: rgb(0, 0, 0);
+  	line-height: 1.714;
+}
+		/*Модификатор блока имени*/
+.content-dawn__discription-name_font-weight-bold {
+  	font-weight: bold;
+}
+	/*Блок с загруженным изображением*/
+.content-dawn__box-img {
+	height: 321px;
+	background-image: url(../img/people.jpg);
+	cursor: pointer;
+}
+
+.content-dawn__box-item {
+	margin-bottom: 30px;
+}
+		/*Модификатор заголовка блока content-dawn*/
+.box-content__h2_text-align_center {
+	text-align: center;
+	margin-top: 56px;
+}
+		/*Модификатор контента блока content-dawn*/
+.box-content__discription_text-align_center {
+	text-align: center;
+}
+/* Блок с нижними социальными иконками */
+.box-social-media {
+	text-align: center;
+}
+
+.social-media__img {
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	border-radius: 50px;
+	background-color: #C5C5C5;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	cursor: pointer;	
+}
+
+.social-media__img-twitter {
+	background-image: url("../img/twitter.png");
+	background-position-x: 9px;
+    background-position-y: 11px;
+}
+
+.social-media__img-facebook {
+	background-image: url("../img/facebook.png");
+	background-position-x: 12px;
+    background-position-y: 9px;
+}
+
+.social-media__img-pinterest {
+	background-image: url("../img/pinterest.png");
+	background-position-x: 7px;
+    background-position-y: 7px;
+}
+
+.social-media__img-google {
+	background-image: url("../img/google.png");
+	background-position-x: 9px;
+    background-position-y: 9px;
+}
+
+.social-media__img-linkedin {
+	background-image: url("../img/linkedin.png");
+	background-position-x: 10px;
+    background-position-y: 9px;
+}
+
+.social-media__img-youtube {
+	background-image: url("../img/youtube.png");
+	background-position-x: 8px;
+    background-position-y: 5px;
+}
+		/* Модификатор блока social-media__img. Св-во margin-right*/
+.social-media__img_margin-right_none {
+	margin-right: 0px;
+}
+		/*При наведении на иконки*/
+.social-media__img:hover {
+	background-color: #575757;
+}
+
+.footer {
+	height: 134px;
+	background-color: #E3E3E3;
+}
+/*Блок навигации*/
+.footer-nav {
+	text-align: center;
+	padding-top: 61px;
+}
+
+.footer-nav__list-item {
+	display: inline-block;
+  	font-size: 16px;
+  	font-family: "HelveticaNeue";
+  	color: rgb(132, 132, 132);
+  	line-height: 1.625;
+  	margin-right: 37px;
+}
+		/*Модификатор при наведении на навиацию внтури блока footer*/
+.footer-nav__list-item:hover {
+	text-decoration: underline;
+}
+	/*Блок ссылки навигации*/
+.footer-nav__link {
+	text-decoration: none;
+	color: #848484;
+}
